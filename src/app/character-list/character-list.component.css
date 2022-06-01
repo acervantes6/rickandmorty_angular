@@ -1,0 +1,27 @@
+.character-grid {
+    display: grid;
+    grid-gap: 16px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
+}
+
+.character-grid .box{
+    position: relative;
+    height: 300px;;
+    width: 300px;
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #000;
+    text-transform: uppercase;
+}
+
+img{
+    width: 60%;
+}
+ 
+

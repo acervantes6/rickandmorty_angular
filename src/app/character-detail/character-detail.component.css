@@ -1,0 +1,22 @@
+.character-card {
+    position: relative;
+    height: fit-content;
+    font-family: 'Roboto Mono', monospace;
+    max-width: 500px;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #000;
+    text-transform: uppercase;
+  }
+  .img-container {
+    position: relative;
+    width: 180px;
+    margin: 10px auto;
+  }
+  img{
+    width: 60%;
+}

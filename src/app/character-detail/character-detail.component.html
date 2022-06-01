@@ -1,0 +1,32 @@
+<br>
+<br>
+<br>
+
+<div  class="character-card">
+  <img class="image-container" src="https://rickandmortyapi.com/api/character/avatar/{{ characterInfo.id }}.jpeg" alt="Character">
+  <div class="card-body">
+    <br>
+    <h4 class="card-title">{{ characterInfo.name }}</h4>
+    <hr>
+    <p>
+      <b># {{ characterInfo.id }}</b> 
+  </p>
+  <p>
+      <b>Status: {{ characterInfo.status }}</b> 
+  </p>
+  <p>
+      <b>Species: {{ characterInfo.species }}</b> 
+  </p>
+  <p>
+      <b>Gender: {{ characterInfo.gender }}</b>
+  </p>
+  <p>
+    <b>Origin: {{ characterInfo.origin.name }}</b>
+  </p>
+  <p>
+    <b>Location: {{ characterInfo.location.name }}</b>
+  </p>
+  <a [routerLink]="['/', 'characters']" class="list-group-item" class="btn btn-primary">BACK TO CHARACTERS LIST</a>
+  </div>
+</div>
+<br>
