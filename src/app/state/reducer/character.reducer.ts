@@ -7,11 +7,9 @@ export const initialState: CharacterState = {loading: false, characters: [], inf
 export const characterReducer = createReducer(
   initialState,
   on(loadCharacter, (state ) => { 
-     console.log('Character Reducer', state)
       return {...state, loading: true  }
    }), 
    on(loadedCharacter, (state, payload) => { 
-      console.log(payload);
       return {...state, loading: false, ...payload }
    }),
    on(GET, (state) => { 

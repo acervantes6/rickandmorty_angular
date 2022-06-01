@@ -18,7 +18,7 @@ export class DataService {
   getApiUrl(){
     return this.apiUrl;
   } 
-  //Funcion Observable
+  
   getDataApiCharacter():Observable<any>{
     return this.http.get<CharacterModel[]>(`${this.apiUrl}/character`);
   } 
@@ -28,21 +28,6 @@ export class DataService {
   getDataApiEpisode():Observable<any>{
     return this.http.get<EpisodeModel[]>(`${this.apiUrl}/episode/`);
   } 
-  /*  getCharacters(id: string) {
-    return this.http.get(`${this.apiUrl}/character/${id}`);
-  }  */
-  /* getLocations(id: string){
-    return this.http.get(`${this.apiUrl}/location/`);
-  }  */ 
-  getCharacterByLocation(id: string){
-    return this.http.get(`${this.apiUrl}/location/${id}`);
-  }
- /*  getEpisodes(id: string){
-    return this.http.get(`${this.apiUrl}/episode/`);
-  }   */
-  getEpisodeByLocation(id: string){
-    return this.http.get(`${this.apiUrl}/episode/${id}`);
-  }
-
+  
 }
 

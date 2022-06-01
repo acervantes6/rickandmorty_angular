@@ -7,7 +7,6 @@ export const initialState: LocationState = {loading: false, locations: [] }
 export const locationReducer = createReducer(
   initialState,
   on(loadLocation, (state ) => { 
-     console.log('Location Reducer', state)
       return {...state, loading: true  }
    }), 
    on(loadedLocation, (state, payload) => { 

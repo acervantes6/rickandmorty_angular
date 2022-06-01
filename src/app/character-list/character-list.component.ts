@@ -19,24 +19,16 @@ export class CharacterListComponent implements OnInit {
     private store: Store<AppState>
     ) { 
       this.characters$ = this.store.select(state => state.characters)
-      //console.log(this.characters$);
   }
 
   ngOnInit(): void {
     this.getCharacters(); 
   }
 
-  /* getCharacters() {
-    this.dataService.getCharacters(this.id)
-      .subscribe((response: any) => {
-          this.characters = response.results;
-    }) 
-  } */
   getCharacters() {
     this.store.dispatch(loadCharacter())
     this.store.dispatch(GET())
     this.characters$.subscribe(response => {
-      //console.log(response);
     });
   }
 

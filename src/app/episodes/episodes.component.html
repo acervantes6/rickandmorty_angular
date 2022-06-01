@@ -19,7 +19,7 @@
                     <h3 class="card-title">Episodes</h3>
                     <ul *ngFor="let episode of (episodes$ | async).episodes | filter: filteredString" class="list-group">
                         <li class="list-group-item">
-                            <div style="cursor: pointer"[routerLink]="['/', 'episodes','characters', episode.id]">
+                            <div style="cursor: pointer"[routerLink]="['/', 'episodes','characters', episode.id | filter: filteredLocations]">
                                 {{ episode.name }} 
                             </div>
                         </li>

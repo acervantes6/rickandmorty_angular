@@ -9,7 +9,6 @@ export const initialState: EpisodeState = {loading: false, episodes: [] }
 export const episodeReducer = createReducer(
   initialState,
   on(loadedEpisode, (state ) => { 
-     console.log('Episode Reducer', state)
       return {...state, loading: true  }
    }), 
    on(loadedEpisode, (state, payload) => { 

@@ -12,7 +12,7 @@ export class CharactersEffects {
       ofType('[Character List] load character'),
       mergeMap(() => this.dataService.getDataApiCharacter()
         .pipe(
-          map((response: any) => ({ type: '[Character List] loaded success', characters: response.results, info:response.info })),
+          map((response: any) => ({ type: '[Character List] loaded success', characters: response.results })),
           catchError(() => of({ type: '[Character List] Loaded Error' }))
         )
       )

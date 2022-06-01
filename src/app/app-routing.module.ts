@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'locations', component: LocationComponent },
   { path: 'episodes', component: EpisodesComponent },
   { path: 'locations/characters/:location', component: CharacterListComponent },
-  { path: 'episodes/characters/:episode', component: EpisodesComponent },
+  { path: 'episodes/characters/:episode', component: CharacterListComponent },
   { path: 'characters/detail/:id', component: CharacterDetailComponent},
 ];
 
